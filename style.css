@@ -141,11 +141,119 @@ yıldız parantez *{bütün taglar, başlık, paragraf, d,v vd. ne olursa olsun 
 #footer {
     clear: both;
     height: 30px;
-    background-color: rgb(74, 48, 17);
+    background-color: rgb(136, 82, 17);
     /* margin-top: 20px;  floatlı alanlarda üst margin çalışmaz dolayısıyla yukarı çıktık margin bottom verdik line90 */
     text-align: right;
 }
 
 #footer span {
     line-height: 30px;
+}
+
+#nav label {
+    display: none;
+    color: rgb(50, 31, 7);
+    font-size: 24px;
+    padding: 10px;
+}
+
+#nav #menu {
+    display: none;
+}
+
+@media only screen and (max-width:576px) {
+    #home {
+        width: 100%;
+        height: auto;
+    }
+
+    #header {
+        display: none;
+    }
+
+    .section1 {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+
+    }
+
+    #article {
+        width: 100%;
+        height: auto;
+        margin-right: 0px;
+        float: none;
+    }
+
+    #article p {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    #main-img {
+        display: none;
+    }
+
+    #card1,
+    #card2,
+    #card3,
+    #card4 {
+        width: 47%;
+        margin-left: 0px;
+    }
+
+    #card2,
+    #card4 {
+        float: right;
+    }
+
+    #card3 {
+        clear: both;
+    }
+
+    .card-image {
+        width: 100%;
+    }
+
+    #nav label {
+        display: block;
+        text-align: right;
+    }
+
+    #nav ul {
+        display: none;
+        position: absolute;
+        left: 0px;
+        top: 50px;
+        width: 100%;
+
+
+    }
+
+    #nav {
+        height: auto;
+        position: relative;
+        /* içinde absolute olanlar varsa sen bunu tut*/
+    }
+
+    #nav li {
+        float: none;
+
+    }
+
+    #nav #menu:checked+ul {
+        /*  checked olduğunda senden sonra gelen çocuğun etkileşim alsın sen alma*/
+        display: block;
+
+    }
+
+    #nav a {
+        line-height: 50px;
+        /*telefonda dolma parmaklılar için genişletildi*/
+        width: 100%;
+        /* hem nav ul hem de nav a ya 100% width vermen gerekiyor ki tam kaplasın*/
+        background-color: rgb(150, 93, 25, 0.85);
+        text-align: right;
+
+    }
 }
