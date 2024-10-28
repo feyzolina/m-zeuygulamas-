@@ -1,38 +1,45 @@
-body{
+body {
     margin: 0;
     background-color: rgb(63, 38, 7);
 }
-#home{
+
+#home {
     width: 800px;
     height: 800px;
     background-color: white;
     margin-left: auto;
     margin-right: auto;
 }
-#header{
+
+#header {
     height: 220px;
 }
-#header img{
+
+#header img {
     height: 220px;
     width: 100%;
 }
-#nav{
+
+#nav {
     height: 30px;
-    background-color:rgb(150, 93, 25);
+    background-color: rgb(150, 93, 25);
 }
-.section1{
+
+.section1 {
     padding: 20px;
     width: 800px;
     height: 300px;
     box-sizing: border-box;
 }
-#article{
+
+#article {
     width: 490px;
     height: 260px;
     overflow: auto;
     float: left;
 }
-#article p{
+
+#article p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: rgb(80, 50, 12);
@@ -46,7 +53,8 @@ body{
     word-spacing: 20px;
     line-height: 25px; */
 }
-#main-img{
+
+#main-img {
     background-image: url(images/Musee_du_Louvre-List_of_tourist_attractions_in_Paris-Louvre_Palace-Pavillon_de_lHorloge-image.jpg);
     background-size: 250px 260px;
     /* background-repeat: no-repeat;
@@ -65,10 +73,10 @@ body{
 
 /* #card1,  #card2,  #card3,  #card4(ortak stil tanımlama)
 yıldız parantez *{bütün taglar, başlık, paragraf, d,v vd. ne olursa olsun her yerde ortal stil} */
- #card1,
- #card2,
- #card3,
- #card4{
+#card1,
+#card2,
+#card3,
+#card4 {
     width: 175px;
     height: 200px;
     background-color: rgb(96, 58, 12);
@@ -79,22 +87,65 @@ yıldız parantez *{bütün taglar, başlık, paragraf, d,v vd. ne olursa olsun 
     box-sizing: border-box;
     color: white;
     text-align: center;
- }
- #card1{
+    margin-bottom: 20px;
+}
+
+#card1 {
     clear: both;
- }
- .card-img{
+}
+
+.card-image {
     width: 165px;
     height: 160px;
- }
-  #card1 h2,
-  #card2 h2,
-  #card3 h2,
-  #card4 h2{
+}
+
+#card1 h2,
+#card2 h2,
+#card3 h2,
+#card4 h2 {
     margin: 0;
     padding: 0;
     line-height: 30px;
     font-size: 20px;
     /* padding-top: 5px;
     box-sizing: border-box; */
-  }
+}
+
+#nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#nav li {
+    float: left;
+}
+
+#nav a {
+    display: block;
+    width: 160px;
+    /* height: 30px; */
+    line-height: 30px;
+    text-align: center;
+    color: rgb(50, 31, 7);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav a:hover {
+    background-color: rgb(89, 57, 17);
+    color: rgb(172, 110, 34);
+}
+
+#footer {
+    clear: both;
+    height: 30px;
+    background-color: rgb(74, 48, 17);
+    /* margin-top: 20px;  floatlı alanlarda üst margin çalışmaz dolayısıyla yukarı çıktık margin bottom verdik line90 */
+    text-align: right;
+}
+
+#footer span {
+    line-height: 30px;
+}
